@@ -1,0 +1,38 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+BOX_IMAGE = "ubuntu/bionic64"
+
+Vagrant.configure("2") do |config|
+#     config.vm.box = BOX_IMAGE
+#     config.vm.provision :shell, path: "bootstrap.sh"
+#     config.vm.network :forwarded_port, guest: 80, host: 4567
+
+
+    config.vm.define "master" do |subconfig|
+        subconfig.vm.hostname = "master"
+        subconfig.vm.box = BOX_IMAGE
+        subconfig.vm.network :private_network, ip: "10.0.0.10"
+      end
+
+      config.vm.define "node1" do |subconfig|
+        subconfig.vm.hostname = "node1"
+        subconfig.vm.box = BOX_IMAGE
+        subconfig.vm.network :private_network, ip: "10.0.0.11"
+      end
+
+      config.vm.define "node2" do |subconfig|
+        subconfig.vm.hostname = "node2"
+        subconfig.vm.box = BOX_IMAGE
+        subconfig.vm.network :private_network, ip: "10.0.0.12"
+      end
+
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder. The second argument is
+  # the path on the guest to mount the folder. And the optional third
+  # argument is a set of non-required options.
+  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.provision "shell", inline: <<-SHELL
+  apt-get update && apt-get install -y avahi-daemon libnss-mdns
+  SHELL
+end
