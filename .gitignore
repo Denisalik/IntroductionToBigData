@@ -1,3 +1,7 @@
 .idea
 venv
 .vagrant
+hadoop_image.box
+lab5/.idea
+lab4/hadoop_image.box
+lab4/hadoop
