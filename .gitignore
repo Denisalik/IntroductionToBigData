@@ -1,0 +1,15 @@
+.idea
+venv
+.vagrant
+hadoop_image.box
+lab5/.idea
+lab4/hadoop_image.box
+lab4/hadoop
+lab6/.bsp
+lab6/.idea
+.variable_test.swp
+q.md
+lab6/out/artifacts/spark_wordcount_jar/spark-wordcount.jar
+spark-wordcount.jar
+lab6/target/*
+netplan.png
