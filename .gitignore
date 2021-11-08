@@ -8,4 +8,5 @@ lab4/hadoop
 lab6/.bsp
 lab6/.idea
 .variable_test.swp
-q.txt
+q.md
+lab6/out/artifacts/spark_wordcount_jar/spark-wordcount.jar
