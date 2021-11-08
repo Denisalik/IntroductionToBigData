@@ -11,5 +11,5 @@ lab6/.idea
 q.md
 lab6/out/artifacts/spark_wordcount_jar/spark-wordcount.jar
 spark-wordcount.jar
-lab6/target/*
+lab6/target/
 netplan.png
