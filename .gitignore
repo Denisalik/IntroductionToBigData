@@ -10,3 +10,5 @@ lab6/.idea
 .variable_test.swp
 q.md
 lab6/out/artifacts/spark_wordcount_jar/spark-wordcount.jar
+lab6/target
+netplan.png
