@@ -5,11 +5,15 @@ hadoop_image.box
 lab5/.idea
 lab4/hadoop_image.box
 lab4/hadoop
+lab4/spark-mllib.jar
+lab4/twitter_sentiment_data.csv
 lab6/.bsp
 lab6/.idea
 .variable_test.swp
-q.md
 lab6/out/artifacts/spark_wordcount_jar/spark-wordcount.jar
 spark-wordcount.jar
 lab6/target/
-netplan.png
+
+lab7/target/
+lab7/.idea
+lab7/.bsp
